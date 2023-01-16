@@ -1,3 +1,10 @@
+:root{
+  --blue:rgb(24, 98, 208);
+  --grey:#282c34;
+  --lightBackground:#b3c8f3;
+}
+
+
 .App {
   text-align: center;
 }
@@ -35,4 +42,53 @@
   to {
     transform: rotate(360deg);
   }
+}
+.navbar{
+  display:flex;
+  justify-content:space-around;
+  background-color:var(--grey);
+  color:white;
+}
+.navbar :hover{
+  color:red
+}
+
+.footer{
+  background-color:var(--grey)
+}
+
+.todosection{
+  margin:auto;
+  margin-right:auto;
+  background-color:var(--blue);
+  width:50%;
+  border-radius:20px;
+}
+
+.homepage{
+background-color:var(--lightBackground);
+}
+
+.todoAnalytics{
+background-color:var(--lightBackground);
+}
+
+.todoItem{
+padding-top:3%;
+padding-bottom:3%;
+}
+
+.footerText{
+  height:20px;
+  color:white;
+  display:flex;
+  flex-direction:row;
+  font-size: 16px;
+  justify-content:space-around;
+  align-items:center;
+}
+
+#copyright{
+  height:30px;
+  color:white;
 }

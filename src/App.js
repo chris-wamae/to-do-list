@@ -1,26 +1,24 @@
 import logo from './logo.svg';
+import React,{useState,useEffect} from 'react';
 import './App.css';
-import Home from './components/Home';
+import Home from './view/Home';
+import TodoList from './components/TodoList';
+import TodoAnalytics from './view/TodoAnalytics';
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
+function App(){
+  const [currentPage,newPage] = useState(<Home changePage={changePage}/>)
+  function changePage(pageName){
+  return pageName === 1 ? newPage(<Home changePage={changePage}/>) : newPage(<TodoAnalytics changePage={changePage}/>)
+  }
+  
 
-function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    {currentPage}
     </div>
   );
 }
 
 export default App;
+ 
