@@ -42,4 +42,11 @@
     transform: rotate(360deg);
   }
 }
+.navbar{
+  background-color:var(--grey)
+}
+
+.footer{
+  background-color:var(--blue)
+}
 
