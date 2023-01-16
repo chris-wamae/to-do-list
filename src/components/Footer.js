@@ -1,6 +1,7 @@
 function Footer(){
     return(<div className="footer">
-        <h2>This is the footer</h2>
+        <p id="copyright">&copy; chris wamae 2023</p>
+       
     </div>)
 }
 export default Footer

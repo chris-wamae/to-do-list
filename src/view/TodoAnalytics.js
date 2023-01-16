@@ -2,13 +2,13 @@ import NavBar from "../components/NavBar"
 import Footer from "../components/Footer"
 import TodoList from "../components/TodoList"
 function TodoAnalytics({changePage}){
-    return(    <>
+    return(<div className="todoAnalytics">
         <NavBar changePage={changePage}/>
-        <h1>NEWLY ADDED TODO's</h1>
+        <h2>Newly added todo's</h2>
         <TodoList />
-        <h1>PENDING TODO'S</h1>
+        <h2>Pending todo's</h2>
         <TodoList />
         <Footer />
-        </>)
+        </div>)
 }
 export default TodoAnalytics

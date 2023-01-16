@@ -9,8 +9,8 @@ function NavBar({changePage}){
         }
     return(
     <div className="navbar">
-        <h1 onClick={changePageHome}>Home</h1>
-        <h1 onClick={changePageTodoAnalytics}>TodoAnalytics</h1>
+        <p onClick={changePageHome}>Home</p>
+        <p onClick={changePageTodoAnalytics}>TodoAnalytics</p>
     </div>)
 }
 export default NavBar
