@@ -1,15 +1,17 @@
 import Home from "../view/Home"
 import TodoItem from "./TodoItem"
 import React,{useState} from "react"
-function TodoList(){
+function TodoList({todos1}){
     const [todos,setTodo] = useState([{
         "id" : 1,
         "title" :"learn react",
-        "description" : "Introduction to react"
+        "description" : "Introduction to react",
+        "status" : false
     },
     {    "id" : 2,
         "title" :"Go to the market",
-        "description" : "Buy some fruits and groceries for my granny"
+        "description" : "Buy some fruits and groceries for my granny",
+        "status" : false
     }])
     return (
         <section className="todosection">

@@ -101,3 +101,31 @@ select{
   text-align:center;
   background-color:var(--lightBackground);
 }
+
+.addTodoForm{
+  background-color:var(--grey);
+  width:400px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.addTodoForm form{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items: center;
+  padding-left:30px;
+  padding-right:30px ;
+  padding-bottom:30px;
+ 
+}
+
+.addTodoForm form input,.addTodoForm form textarea{
+  margin-bottom:10px;
+  text-align:center;
+}
+
+.addTodoForm form button{
+  width:80px;
+  height:30px;
+}
