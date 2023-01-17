@@ -92,3 +92,12 @@ padding-bottom:3%;
   height:30px;
   color:white;
 }
+
+select{
+  border:0px;
+  width:120px;
+  height:40px;
+  border-radius:10px;
+  text-align:center;
+  background-color:var(--lightBackground);
+}
